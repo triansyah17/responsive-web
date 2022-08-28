@@ -1,0 +1,44 @@
+* {
+  font-family: "Metropolis", sans-serif;
+}
+
+.text-regis {
+  text-align: center;
+  padding-top: 1em;
+}
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #db3022;
+}
+.nav-pills .nav-link {
+  width: 100px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+a:link,
+a:visited {
+  text-decoration: none !important;
+  color: white;
+  cursor: pointer !important;
+}
+
+.btn {
+  background-color: #db3022;
+  color: white;
+}

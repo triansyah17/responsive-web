@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <title>My Bag</title>
+    <link rel="stylesheet" href="../assets/style/checkoutfix.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a href="../index.html"
+            ><img src="../assets/img/logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item ml-2">
+                <input
+                  class="form-control mr-2 input"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </li>
+              <li class="nav-item ml-2">
+                <a href="" data-toggle="modal" data-target="#exampleModal">
+                  <img
+                    class="mr-4"
+                    src="../assets/img/ic_filter.png"
+                    alt="filter"
+                  />
+                </a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <a href="./mybagfix.html"
+                ><img class="mr-4" src="../assets/img/cart.png" alt="cart"
+              /></a>
+              <a href=""
+                ><img class="mr-4" src="../assets/img/bell.png" alt="bell"
+              /></a>
+              <a href=""
+                ><img class="mr-4" src="../assets/img/mail.png" alt="mail"
+              /></a>
+              <a href=""
+                ><img class="mr-4" src="../assets/img/ic-user.png" alt="user"
+              /></a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div
+          class="modal fade mt-5"
+          id="exampleModal"
+          data-backdrop="static"
+          data-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <p class="text-filter">Filter</p>
+              </div>
+              <div class="modal-body">
+                <strong class="ml-3 mb-3">Colors</strong>
+                <ul>
+                  <li>
+                    <button class="colorBtn">
+                      <div class="color"></div>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="colorBtn">
+                      <div class="color bg-white"></div>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="colorBtn">
+                      <div class="color bg-danger"></div>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="colorBtn">
+                      <div class="color bg-primary"></div>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-body">
+                <strong class="ml-3 mb-3">Size</strong>
+                <ul>
+                  <li>
+                    <button class="btn1">XS</button>
+                  </li>
+                  <li>
+                    <button>S</button>
+                  </li>
+                  <li>
+                    <button>M</button>
+                  </li>
+                  <li>
+                    <button>L</button>
+                  </li>
+                  <li>
+                    <button>XL</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-body">
+                <strong class="ml-3 mb-3">Category</strong>
+                <ul>
+                  <li>
+                    <button class="col-3">All</button>
+                  </li>
+                  <li>
+                    <button class="col-3">Women</button>
+                  </li>
+                  <li>
+                    <button class="col-3">Men</button>
+                  </li>
+                  <li>
+                    <button class="col-3 mt-1">Boys</button>
+                  </li>
+                  <li>
+                    <button class="col-3 mt-1">Girls</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1"
+                    ><strong>Brand</strong></label
+                  >
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Adidas Originals</option>
+                    <option>Jack & Jones</option>
+                    <option>S.Oliver</option>
+                    <option>Nike</option>
+                    <option>Zalora</option>
+                  </select>
+                </div>
+              </div>
+              <footer>
+                <div class="p-5 text-center">
+                  <button
+                    class="btn mr-5 bg-danger rounded-pill mr-auto"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    Discard
+                  </button>
+                  <button
+                    class="btn mr-5 rounded-pill"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    Apply
+                  </button>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container mt-5 py-5">
+          <h4>Checkout</h4>
+        </div>
+      </section>
+
+      <section class="">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <strong>Shipping Address</strong>
+              <div class="card mt-2">
+                <div class="card-body">
+                  <strong>Rizki Nasution</strong>
+                  <aside>
+                    <p class="text-justify">
+                      Perumahan Sapphire Mediterania, Wiradadi, Kec. Sokaraja,
+                      Kabupaten Banyumas, Jawa Tengah, 53181 [Tokopedia Note:
+                      blok c 16] Sokaraja, Kab. Banyumas, 53181
+                    </p>
+                  </aside>
+                </div>
+              </div>
+
+              <div class="card mt-3">
+                <div
+                  class="card-body d-flex align-items-center justify-content-between flex-lg-row flex-sm-row flex-column"
+                >
+                  <div class="product-bag d-flex align-items-center">
+                    <img src="../assets/img/clothe.png" alt="clothe1" />
+                    <div class="name">
+                      <strong>Men's formal suit - Black</strong>
+                      <p>Zalora Cloth</p>
+                    </div>
+                  </div>
+
+                  <div class="price">
+                    <strong>$ 20.0</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mt-3">
+                <div
+                  class="card-body d-flex align-items-center justify-content-between flex-lg-row flex-sm-row flex-column"
+                >
+                  <div class="product-bag d-flex align-items-center">
+                    <img src="../assets/img/clothe.png" alt="clothe2" />
+                    <div class="name">
+                      <strong>Men's formal suit - Black</strong>
+                      <p>Zalora Cloth</p>
+                    </div>
+                  </div>
+
+                  <div class="price">
+                    <strong>$ 20.0</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-4 mt-2">
+              <div class="card mt-4">
+                <div class="card-body">
+                  <div class="d-flex flex-column">
+                    <div class="p-2">
+                      <strong>Shopping Address</strong>
+                    </div>
+
+                    <div class="p-2">
+                      <div class="d-flex justify-content-between">
+                        <div class="">
+                          <p>Order</p>
+                        </div>
+                        <div class="">
+                          <strong>$40.0</strong>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-between">
+                        <div class="">
+                          <p>Delivery</p>
+                        </div>
+                        <div class="">
+                          <strong>$5.0</strong>
+                        </div>
+                      </div>
+
+                      <div class="border"></div>
+
+                      <div class="d-flex mt-4 justify-content-between">
+                        <div class="">
+                          <strong>Shopping Summary</strong>
+                        </div>
+                        <div class="">
+                          <strong>$45.0</strong>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="btn rounded-pill w-100" type="button">
+                      <a href="">Select Payment</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
