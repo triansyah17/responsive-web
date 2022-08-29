@@ -32,9 +32,11 @@ a:visited {
 }
 
 .btn {
+  color: #ffffff;
   background-color: #db3022;
   size: 0.1rem;
 }
+
 
 .btn a {
   color: #ffffff;
